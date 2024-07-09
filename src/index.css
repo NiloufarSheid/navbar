@@ -9,6 +9,7 @@
 body{
     direction: rtl;
     font-family: "vazir";
+    background: #f8f8f8f8;
 }
 nav{
     display: flex;
@@ -34,6 +35,11 @@ nav{
    
     margin: 0 10px;
 }
+.nav-links a{
+color: #333;
+font-size: 17px;
+}
+
 .nav-logo{
     display: flex;
     align-items: center;
@@ -41,6 +47,7 @@ nav{
 }
 .nav-logo img{
     width: 75px;
+    background: transparent;
 }
 .nav-toggle{
     background: transparent;
@@ -56,5 +63,38 @@ nav{
 }
 .nav-socials li{
    margin-left: 10px;
+    
+}
+.nav-socials a{
+    color: #333;
+    font-size: 17px;
+}
+@media screen and (max-width :767px) {
+    .nav-logo{
+        width: 100%;
+    }
+    .nav-toggle{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 65px;
+        height: 300px;
+        background: #f5f2f2;
+    }
+    .nav-links ul{
+        display: block;
+
+    }
+    .nav-links ul li{
+        padding: 15px 20px;
+    }
+    .nav-socials{
+        display: none;
+    }
+
+
     
 }
