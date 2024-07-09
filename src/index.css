@@ -13,22 +13,26 @@ body{
 nav{
     display: flex;
     align-items:center;
-    justify-content: center;
+    justify-content: centerx;
     background: #fff;
     box-shadow: 0 0 10px rgb(117, 117,117, 3);
     height: 65px;
     padding: 0 20px;
 }
 .container{
- 
+ width: 580px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: auto;
     
 }
-.nav-links{
+.nav-links ul{
     display: flex;
+}
+.nav-links li{
+   
+    margin: 0 10px;
 }
 .nav-logo{
     display: flex;
@@ -45,4 +49,12 @@ nav{
     height: 40px;
     cursor: pointer;
     display: none;
+}
+.nav-socials{
+    display: flex;
+    
+}
+.nav-socials li{
+   margin-left: 10px;
+    
 }
