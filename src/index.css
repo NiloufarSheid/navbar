@@ -81,7 +81,8 @@ font-size: 17px;
         right: 0;
         left: 0;
         top: 65px;
-        height: 300px;
+        height: auto;
+        
         background: #f5f2f2;
     }
     .nav-links ul{

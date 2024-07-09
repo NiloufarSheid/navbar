@@ -3,21 +3,24 @@ import logo from "./logo.png"
 import links  from "./data"
 import { FaBars} from 'react-icons/fa';
 import networks from "./Social";
+import { useState } from "react";
 
 
 const Navbar = () => {
+  const[showLinks,setShowLinks]=useState(false);
   return (
     <nav>
  <div className='container'>
    <div className='nav-logo'>
-    <button className="nav-toggle">
+    <button className="nav-toggle" onClick={()=>setShowLinks(!showLinks)}>
       <FaBars />
       </button>
     <img src={logo} alt=''/>
    </div>
 
 
-   <div className='nav-links'>
+   {
+    showLinks && <div className='nav-links'>
     <ul>
 {
   links.map((link) => {
@@ -31,6 +34,7 @@ const Navbar = () => {
 }
     </ul>
    </div>
+   }
 
 
    <ul className="nav-socials">
